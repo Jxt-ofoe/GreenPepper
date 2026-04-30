@@ -31,6 +31,7 @@ export default function RootLayout({
         <title>Beebie's Green Pepper Chinese | Comfort Food in Accra</title>
         <meta name="description" content="Authentic Chinese-style comfort food in Accra, Ghana. Big portions, bold flavours, delivered hot." />
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
       <body>
         <Header />

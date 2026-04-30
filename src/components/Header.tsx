@@ -103,11 +103,11 @@ const Header = () => {
               fontFamily: '"Caveat", cursive',
               lineHeight: 0.8,
               position: 'relative',
-              paddingLeft: '40px' // Space for the rotated 'Beebie's'
+              paddingLeft: '50px' // Increased for larger 'Beebie's'
             }} className="nav-brand-container">
               <span style={{ 
                 color: '#F44336', 
-                fontSize: '1.2rem', 
+                fontSize: '1.5rem', // Increased from 1.2rem
                 position: 'absolute', 
                 left: '0', 
                 top: '5px', 
@@ -116,8 +116,8 @@ const Header = () => {
               }} className="nav-beebies">Beebie's</span>
               
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ color: '#2E7D32', fontSize: '1.8rem', fontWeight: 700 }} className="nav-green-pepper">Green Pepper</span>
-                <span style={{ color: '#2E7D32', fontSize: '1.6rem', fontWeight: 700, paddingLeft: '10px' }} className="nav-chinese">Chinese</span>
+                <span style={{ color: '#2E7D32', fontSize: '2.2rem', fontWeight: 700 }} className="nav-green-pepper">Green Pepper</span>
+                <span style={{ color: '#2E7D32', fontSize: '2.0rem', fontWeight: 700, paddingLeft: '15px' }} className="nav-chinese">Chinese</span>
               </div>
             </div>
           </Link>
@@ -240,17 +240,17 @@ const Header = () => {
             border-radius: 50% !important;
           }
           .nav-brand-container {
-            padding-left: 30px !important;
+            padding-left: 40px !important;
           }
           .nav-beebies {
-            font-size: 1rem !important;
+            font-size: 1.2rem !important;
             top: 2px !important;
           }
           .nav-green-pepper {
-            font-size: 1.4rem !important;
+            font-size: 1.7rem !important;
           }
           .nav-chinese {
-            font-size: 1.2rem !important;
+            font-size: 1.5rem !important;
           }
         }
       `}</style>
