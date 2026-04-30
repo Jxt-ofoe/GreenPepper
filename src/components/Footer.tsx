@@ -27,9 +27,9 @@ const Footer = () => {
       <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '4rem', marginBottom: '4rem' }}>
         <div>
           <div style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <img src="/images/logo.png" alt="BB's Green Pepper Logo" style={{ height: '50px', width: 'auto', background: 'white', borderRadius: '8px', padding: '2px' }} />
+            <img src="/images/logo.png" alt="Beebie's Green Pepper Chinese Logo" style={{ height: '50px', width: 'auto', background: 'white', borderRadius: '8px', padding: '2px' }} />
             <div style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-              <span style={{ color: '#F44336' }}>BB's</span> <span style={{ color: '#66BB6A' }}>Green Pepper</span>
+              <span style={{ color: '#F44336' }}>Beebie's</span> <span style={{ color: '#66BB6A' }}>Green Pepper Chinese</span>
             </div>
           </div>
           <p style={{ lineHeight: 1.8 }}>Authentic Chinese comfort food in the heart of Accra. Big portions, bold flavours, delivered hot to your doorstep.</p>
@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
       <div style={{ textAlign: 'center', paddingTop: '2.5rem', borderTop: '1px solid #374151', fontSize: '0.9rem', color: '#9ca3af' }}>
-        &copy; {new Date().getFullYear()} BB's Green Pepper Chinese, Accra. All rights reserved.
+        &copy; {new Date().getFullYear()} Beebie's Green Pepper Chinese, Accra. All rights reserved.
       </div>
     </footer>
   );

@@ -78,7 +78,7 @@ const Header = () => {
       }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
           <div style={{ fontSize: '1.5rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <span style={{ color: '#F44336' }}>BB's</span>
+            <span style={{ color: '#F44336' }}>Beebie's</span>
             <span style={{ color: '#2E7D32' }}>Green Pepper Chinese</span>
           </div>
         </Link>

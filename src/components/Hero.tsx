@@ -47,7 +47,7 @@ const Hero = () => {
             <span style={{ fontSize: '0.9rem', fontWeight: 500 }}>4.3 (103 Reviews)</span>
           </div>
           <h1 style={{ fontSize: 'clamp(2rem, 8vw, 3.5rem)', lineHeight: 1.1, marginBottom: '1rem' }}>
-            <span style={{ color: '#F44336' }}>BB's</span> <span style={{ color: '#2E7D32' }}>Green Pepper Chinese</span>
+            <span style={{ color: '#F44336' }}>Beebie's</span> <span style={{ color: '#2E7D32' }}>Green Pepper Chinese</span>
           </h1>
           <p style={{ fontSize: 'clamp(1rem, 4vw, 1.25rem)', color: '#4b5563', marginBottom: '1.5rem' }}>
             Chinese comfort food – <span style={{ color: '#F44336', fontWeight: 600 }}>big portions</span>, bold flavours, delivered hot.
@@ -60,7 +60,7 @@ const Hero = () => {
             alignItems: 'center'
           }} className="hero-btns">
             <a 
-              href="https://wa.me/233208129361?text=Hello%20Green%20Pepper%20Restaurant,%20I'd%20like%20to%20place%20an%20order." 
+              href="https://wa.me/233208129361?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order." 
               target="_blank"
               rel="noopener noreferrer"
               style={{ 
@@ -95,7 +95,7 @@ const Hero = () => {
         }}>
           <img 
             src="/images/hero.png" 
-            alt="Green Pepper signature dish" 
+            alt="Beebie's signature dish" 
             style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
           />
         </div>

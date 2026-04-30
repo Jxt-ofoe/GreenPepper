@@ -47,8 +47,8 @@ export const menuData = [
       { name: "Steamed Rice With Beef", price: "GH₵70" },
       { name: "Steamed Rice With Shrimps", price: "GH₵75" },
       { name: "Full Chips", price: "GH₵45" },
-      { name: "Green Pepper Special (Beef, Chicken, Squid/Octopus)", price: "GH₵95" },
-      { name: "Green Pepper Special (Beef, Chicken, Shrimp)", price: "GH₵95" },
+      { name: "Beebie's Green Pepper Special (Beef, Chicken, Squid/Octopus)", price: "GH₵95" },
+      { name: "Beebie's Green Pepper Special (Beef, Chicken, Shrimp)", price: "GH₵95" },
       { name: "Fried/Steamed Rice With Assorted Sea Foods", price: "GH₵105" },
     ],
   },
@@ -63,7 +63,7 @@ export const menuData = [
       { name: "Fried Noodles With Pork", price: "GH₵75" },
       { name: "Fried Noodles With Shrimps", price: "GH₵80" },
       { name: "Fried Noodles With Assorted Meat", price: "GH₵90" },
-      { name: "Green Pepper Special Noodles", price: "GH₵100" },
+      { name: "Beebie's Green Pepper Special Noodles", price: "GH₵100" },
     ],
   },
   {
@@ -136,7 +136,7 @@ export const menuData = [
       { name: "Chicken Shawarma", price: "GH₵60" },
       { name: "Beef Shawarma", price: "GH₵60" },
       { name: "Assorted Shawarma", price: "GH₵70" },
-      { name: "Green Pepper Special Shawarma", price: "GH₵80" },
+      { name: "Beebie's Green Pepper Special Shawarma", price: "GH₵80" },
     ],
   },
   {

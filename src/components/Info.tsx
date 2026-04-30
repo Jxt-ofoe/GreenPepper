@@ -36,7 +36,7 @@ const Info = () => {
             <p style={{ color: '#4b5563', marginBottom: '1.5rem', fontSize: '0.95rem' }}>Order via WhatsApp or call us directly for pickup orders.</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
               <a 
-                href="https://wa.me/233208129361?text=Hello%20Green%20Pepper%20Restaurant,%20I'd%20like%20to%20place%20an%20order." 
+                href="https://wa.me/233208129361?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order." 
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ background: '#2E7D32', color: 'white', padding: '10px 20px', borderRadius: '10px', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}

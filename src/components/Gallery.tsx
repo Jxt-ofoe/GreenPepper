@@ -26,7 +26,7 @@ const media = [
   { type: 'video', src: '/images/video_2026-04-30_12-31-05.mp4', poster: '/images/pork_dish.png', label: 'Sizzling Wok' },
   { type: 'video', src: '/images/Watch_as_we_prepare_our_perfectly_made_spring_rolls,_each_one_with.mp4', poster: '/images/takeaway.png', label: 'Handmade Spring Rolls' },
   { type: 'video', src: '/images/No_better_place_to_celebrate_Mother\'s_Day_than_with_us_We_have_a.mp4', poster: '/images/hero.png', label: 'Celebrate With Us' },
-  { type: 'image', src: '/images/shawarma.png', label: 'BB\'s Shawarma' },
+  { type: 'image', src: '/images/shawarma.png', label: 'Beebie\'s Shawarma' },
   { type: 'image', src: '/images/noodle_soup.png', label: 'Signature Noodle Soup' },
   { type: 'image', src: '/images/pork_dish.png', label: 'Szechuan Pork' },
   { type: 'image', src: '/images/noodles.png', label: 'House Special Noodles' },
@@ -40,7 +40,7 @@ const media = [
   { type: 'image', src: '/images/gallery2.png', label: 'Spicy Chicken Wings' },
   { type: 'image', src: '/images/gallery3.png', label: 'Assorted Meat Rice' },
   { type: 'image', src: '/images/gallery4.png', label: 'Our Restaurant' },
-  { type: 'image', src: '/images/hero.png', label: 'Green Pepper Dining' },
+  { type: 'image', src: '/images/hero.png', label: 'Beebie\'s Dining' },
 ];
 
 const GalleryItem = ({ item, index }: { item: any, index: number }) => {

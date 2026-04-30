@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>BB's Green Pepper Chinese | Comfort Food in Accra</title>
+        <title>Beebie's Green Pepper Chinese | Comfort Food in Accra</title>
         <meta name="description" content="Authentic Chinese-style comfort food in Accra, Ghana. Big portions, bold flavours, delivered hot." />
       </head>
       <body>
@@ -38,7 +38,7 @@ export default function RootLayout({
 
         {/* Floating Action Button */}
         <a 
-          href="https://wa.me/233208129361?text=Hello%20Green%20Pepper%20Restaurant,%20I'd%20like%20to%20place%20an%20order." 
+          href="https://wa.me/233208129361?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order." 
           target="_blank"
           rel="noopener noreferrer"
           style={{ 

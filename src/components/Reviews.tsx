@@ -43,7 +43,7 @@ const reviews = [
   {
     name: "Kwame Nkrumah",
     rating: 5,
-    text: "Great service and even better food. The Green Pepper Special is worth every Cedi.",
+    text: "Great service and even better food. The Beebie's Green Pepper Special is worth every Cedi.",
   }
 ];
 
