@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Clock, CheckCircle, XCircle } from 'lucide-react';
+import { Clock, CheckCircle, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [status, setStatus] = useState({ isOpen: false, message: 'Closed · Opens 10:30am' });
 
   useEffect(() => {
@@ -73,17 +75,36 @@ const Header = () => {
         padding: '0.8rem 5%', 
         maxWidth: '1400px', 
         margin: '0 auto',
-        flexWrap: 'wrap',
         gap: '10px'
       }}>
-        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-          <div style={{ fontSize: '1.5rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <span style={{ color: '#F44336' }}>Beebie's</span>
-            <span style={{ color: '#2E7D32' }}>Green Pepper Chinese</span>
-          </div>
-        </Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          {/* Hamburger Menu Toggle (Mobile Only) */}
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="mobile-menu-btn"
+            style={{ 
+              background: 'none', 
+              border: 'none', 
+              padding: '8px', 
+              cursor: 'pointer',
+              color: '#1F2937',
+              display: 'none', // Hidden on desktop
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+          >
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+            <div style={{ fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px', fontStyle: 'italic', transform: 'skewX(-15deg)' }} className="brand-container">
+              <span style={{ color: '#F44336' }} className="brand-beebies">Beebie's</span>
+              <span style={{ color: '#2E7D32' }} className="brand-suffix">Green Pepper Chinese</span>
+            </div>
+          </Link>
+        </div>
         
-        <div style={{ 
+        <div className="header-status" style={{ 
           background: status.isOpen ? '#f0fdf4' : '#fee2e2', 
           color: status.isOpen ? '#166534' : '#F44336', 
           padding: '6px 14px', 
@@ -96,17 +117,18 @@ const Header = () => {
           border: `1px solid ${status.isOpen ? '#bbf7d0' : '#fecaca'}`
         }}>
           {status.isOpen ? <CheckCircle size={16} /> : <Clock size={16} />}
-          {status.message}
+          <span className="status-text">{status.message}</span>
         </div>
       </div>
       
-      <nav style={{ 
+      {/* Desktop Navigation */}
+      <nav className="desktop-nav" style={{ 
         borderTop: '1px solid #e5e7eb', 
         background: 'white', 
         overflowX: 'auto', 
         whiteSpace: 'nowrap',
-        scrollbarWidth: 'none', // Firefox
-        msOverflowStyle: 'none', // IE/Edge
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none',
       }}>
         <div style={{ display: 'flex', justifyContent: 'center', maxWidth: '1400px', margin: '0 auto', padding: '0 5%' }}>
           {tabs.map((tab) => (
@@ -136,9 +158,81 @@ const Header = () => {
           ))}
         </div>
       </nav>
+
+      {/* Mobile Navigation Dropdown */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{ 
+              overflow: 'hidden', 
+              background: 'white', 
+              borderTop: '1px solid #e5e7eb'
+            }}
+            className="mobile-nav"
+          >
+            <div style={{ display: 'flex', flexDirection: 'column', padding: '1rem 5%' }}>
+              {tabs.map((tab) => (
+                <Link
+                  key={tab.id}
+                  href={tab.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{
+                    padding: '1rem 0',
+                    fontWeight: 600,
+                    color: isActive(tab.href) ? '#2E7D32' : '#4b5563',
+                    fontSize: '1.1rem',
+                    textDecoration: 'none',
+                    borderBottom: '1px solid #f3f4f6'
+                  }}
+                >
+                  {tab.label}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <style jsx>{`
         nav::-webkit-scrollbar {
           display: none;
+        }
+
+        .brand-container {
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+          .mobile-menu-btn {
+            display: flex !important;
+          }
+          .desktop-nav {
+            display: none !important;
+          }
+          .status-text {
+            display: none;
+          }
+          .header-status {
+            padding: 8px !important;
+            border-radius: 50% !important;
+          }
+          .brand-beebies {
+            font-size: 1.8rem !important;
+          }
+          .brand-suffix {
+            font-size: 1.1rem !important;
+            line-height: 1.1;
+          }
+          .brand-container {
+            font-size: 1rem;
+            flex-direction: column;
+            align-items: flex-start !important;
+            gap: 0 !important;
+          }
         }
       `}</style>
     </header>

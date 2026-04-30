@@ -46,8 +46,8 @@ const Hero = () => {
             </div>
             <span style={{ fontSize: '0.9rem', fontWeight: 500 }}>4.3 (103 Reviews)</span>
           </div>
-          <h1 style={{ fontSize: 'clamp(2rem, 8vw, 3.5rem)', lineHeight: 1.1, marginBottom: '1rem' }}>
-            <span style={{ color: '#F44336' }}>Beebie's</span> <span style={{ color: '#2E7D32' }}>Green Pepper Chinese</span>
+          <h1 style={{ lineHeight: 1.1, marginBottom: '1rem', fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block' }} className="hero-title">
+            <span style={{ color: '#F44336' }} className="hero-beebies">Beebie's</span> <span style={{ color: '#2E7D32' }} className="hero-suffix">Green Pepper Chinese</span>
           </h1>
           <p style={{ fontSize: 'clamp(1rem, 4vw, 1.25rem)', color: '#4b5563', marginBottom: '1.5rem' }}>
             Chinese comfort food – <span style={{ color: '#F44336', fontWeight: 600 }}>big portions</span>, bold flavours, delivered hot.
@@ -101,6 +101,22 @@ const Hero = () => {
         </div>
       </motion.div>
       <style jsx>{`
+        .hero-title {
+          font-size: clamp(2rem, 8vw, 3.5rem);
+        }
+        @media (max-width: 768px) {
+          .hero-beebies {
+            font-size: 3.5rem !important;
+            display: block;
+            margin-bottom: 0.5rem;
+          }
+          .hero-suffix {
+            font-size: 1.5rem !important;
+          }
+          .hero-title {
+            font-size: 1rem !important;
+          }
+        }
         @media (min-width: 968px) {
           .hero-container {
             flex-direction: row !important;

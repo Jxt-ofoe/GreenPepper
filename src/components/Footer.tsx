@@ -28,7 +28,7 @@ const Footer = () => {
         <div>
           <div style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <img src="/images/logo.png" alt="Beebie's Green Pepper Chinese Logo" style={{ height: '50px', width: 'auto', background: 'white', borderRadius: '8px', padding: '2px' }} />
-            <div style={{ fontSize: '1.5rem', fontWeight: 700 }}>
+            <div style={{ fontSize: '1.5rem', fontWeight: 700, fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block' }}>
               <span style={{ color: '#F44336' }}>Beebie's</span> <span style={{ color: '#66BB6A' }}>Green Pepper Chinese</span>
             </div>
           </div>
