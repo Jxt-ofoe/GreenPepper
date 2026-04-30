@@ -47,7 +47,7 @@ const Hero = () => {
             <span style={{ fontSize: '0.9rem', fontWeight: 500 }}>4.3 (103 Reviews)</span>
           </div>
           <h1 style={{ lineHeight: 1.1, marginBottom: '1rem', fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block' }} className="hero-title">
-            <span style={{ color: '#F44336' }} className="hero-beebies">Beebie's</span> <span style={{ color: '#2E7D32' }} className="hero-suffix">Green Pepper Chinese</span>
+            <span style={{ color: '#F44336', fontFamily: '"Caveat", cursive', fontSize: '1.2em' }} className="hero-beebies">Beebie's</span> <span style={{ color: '#2E7D32' }} className="hero-suffix">Green Pepper Chinese</span>
           </h1>
           <p style={{ fontSize: 'clamp(1rem, 4vw, 1.25rem)', color: '#4b5563', marginBottom: '1.5rem' }}>
             Chinese comfort food – <span style={{ color: '#F44336', fontWeight: 600 }}>big portions</span>, bold flavours, delivered hot.
@@ -109,6 +109,19 @@ const Hero = () => {
             font-size: 3.5rem !important;
             display: block;
             margin-bottom: 0.5rem;
+            position: relative;
+            width: fit-content;
+          }
+          .hero-beebies::after {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #F44336;
+            transform: rotate(-1deg);
+            border-radius: 4px;
           }
           .hero-suffix {
             font-size: 1.5rem !important;

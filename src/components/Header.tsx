@@ -96,10 +96,29 @@ const Header = () => {
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-            <div style={{ fontWeight: 700, display: 'flex', alignItems: 'center', gap: '10px', fontStyle: 'italic', transform: 'skewX(-15deg)' }} className="brand-container">
-              <span style={{ color: '#F44336' }} className="brand-beebies">Beebie's</span>
-              <span style={{ color: '#2E7D32' }} className="brand-suffix">Green Pepper Chinese</span>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+            <div style={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              fontFamily: '"Caveat", cursive',
+              lineHeight: 0.8,
+              position: 'relative',
+              paddingLeft: '40px' // Space for the rotated 'Beebie's'
+            }} className="nav-brand-container">
+              <span style={{ 
+                color: '#F44336', 
+                fontSize: '1.2rem', 
+                position: 'absolute', 
+                left: '0', 
+                top: '5px', 
+                transform: 'rotate(-35deg)',
+                fontWeight: 700
+              }} className="nav-beebies">Beebie's</span>
+              
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span style={{ color: '#2E7D32', fontSize: '1.8rem', fontWeight: 700 }} className="nav-green-pepper">Green Pepper</span>
+                <span style={{ color: '#2E7D32', fontSize: '1.6rem', fontWeight: 700, paddingLeft: '10px' }} className="nav-chinese">Chinese</span>
+              </div>
             </div>
           </Link>
         </div>
@@ -220,18 +239,18 @@ const Header = () => {
             padding: 8px !important;
             border-radius: 50% !important;
           }
-          .brand-beebies {
-            font-size: 1.8rem !important;
+          .nav-brand-container {
+            padding-left: 30px !important;
           }
-          .brand-suffix {
-            font-size: 1.1rem !important;
-            line-height: 1.1;
+          .nav-beebies {
+            font-size: 1rem !important;
+            top: 2px !important;
           }
-          .brand-container {
-            font-size: 1rem;
-            flex-direction: column;
-            align-items: flex-start !important;
-            gap: 0 !important;
+          .nav-green-pepper {
+            font-size: 1.4rem !important;
+          }
+          .nav-chinese {
+            font-size: 1.2rem !important;
           }
         }
       `}</style>
