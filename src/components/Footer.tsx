@@ -28,8 +28,28 @@ const Footer = () => {
         <div>
           <div style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <img src="/images/logo.png" alt="Beebie's Green Pepper Chinese Logo" style={{ height: '50px', width: 'auto', background: 'white', borderRadius: '8px', padding: '2px' }} />
-            <div style={{ fontSize: '1.5rem', fontWeight: 700, fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block' }}>
-              <span style={{ color: '#F44336', fontFamily: '"Caveat", cursive', fontSize: '1.2em' }}>Beebie's</span> <span style={{ color: '#66BB6A' }}>Green Pepper Chinese</span>
+            <div style={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              fontFamily: '"Caveat", cursive',
+              lineHeight: 0.8,
+              position: 'relative',
+              paddingLeft: '45px' // Space for the rotated 'Beebie's'
+            }}>
+              <span style={{ 
+                color: '#F44336', 
+                fontSize: '1.2rem', 
+                position: 'absolute', 
+                left: '0', 
+                top: '5px', 
+                transform: 'rotate(-35deg)',
+                fontWeight: 700
+              }}>Beebie's</span>
+              
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span style={{ color: '#66BB6A', fontSize: '1.8rem', fontWeight: 700 }}>Green Pepper</span>
+                <span style={{ color: '#66BB6A', fontSize: '1.6rem', fontWeight: 700, paddingLeft: '10px' }}>Chinese</span>
+              </div>
             </div>
           </div>
           <p style={{ lineHeight: 1.8 }}>Authentic Chinese comfort food in the heart of Accra. Big portions, bold flavours, delivered hot to your doorstep.</p>
@@ -58,7 +78,7 @@ const Footer = () => {
       </div>
 
       <div style={{ textAlign: 'center', paddingTop: '2.5rem', borderTop: '1px solid #374151', fontSize: '0.9rem', color: '#9ca3af' }}>
-        &copy; {new Date().getFullYear()} Beebie's Green Pepper Chinese, Accra. All rights reserved.
+        &copy; {new Date().getFullYear()} <span style={{ fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block' }}><span style={{ color: '#F44336', fontFamily: '"Caveat", cursive', fontSize: '1.2em' }}>Beebie's</span> <span style={{ color: '#66BB6A' }}>Green Pepper Chinese</span></span>, Accra. All rights reserved.
       </div>
     </footer>
   );

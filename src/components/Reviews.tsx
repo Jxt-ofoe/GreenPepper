@@ -92,7 +92,18 @@ const Reviews = () => {
                   ))}
                 </div>
               </div>
-              <p style={{ fontStyle: 'italic', color: '#4b5563', lineHeight: 1.8 }}>"{review.text}"</p>
+              <p style={{ fontStyle: 'italic', color: '#4b5563', lineHeight: 1.8 }}>
+                "{review.text.split("Beebie's").map((part, i, arr) => (
+                  <span key={i}>
+                    {part}
+                    {i < arr.length - 1 && (
+                      <span style={{ fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block', fontWeight: 700 }}>
+                        <span style={{ color: '#F44336', fontFamily: '"Caveat", cursive', fontSize: '1.2em' }}>Beebie's</span>
+                      </span>
+                    )}
+                  </span>
+                ))}"
+              </p>
             </div>
           </motion.div>
         ))}

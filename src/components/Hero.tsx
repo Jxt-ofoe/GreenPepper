@@ -46,8 +46,30 @@ const Hero = () => {
             </div>
             <span style={{ fontSize: '0.9rem', fontWeight: 500 }}>4.3 (103 Reviews)</span>
           </div>
-          <h1 style={{ lineHeight: 1.1, marginBottom: '1rem', fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block' }} className="hero-title">
-            <span style={{ color: '#F44336', fontFamily: '"Caveat", cursive', fontSize: '1.2em' }} className="hero-beebies">Beebie's</span> <span style={{ color: '#2E7D32' }} className="hero-suffix">Green Pepper Chinese</span>
+          <h1 style={{ 
+            fontFamily: '"Caveat", cursive',
+            lineHeight: 0.8,
+            position: 'relative',
+            paddingLeft: 'clamp(50px, 10vw, 80px)', // Space for the rotated 'Beebie's'
+            display: 'inline-flex',
+            flexDirection: 'column',
+            marginBottom: '1.5rem',
+            textAlign: 'left'
+          }} className="hero-title">
+            <span style={{ 
+              color: '#F44336', 
+              fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', 
+              position: 'absolute', 
+              left: '0', 
+              top: '10px', 
+              transform: 'rotate(-35deg)',
+              fontWeight: 700
+            }} className="hero-beebies">Beebie's</span>
+            
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <span style={{ color: '#2E7D32', fontSize: 'clamp(2.5rem, 10vw, 5rem)', fontWeight: 700 }} className="hero-green-pepper">Green Pepper</span>
+              <span style={{ color: '#2E7D32', fontSize: 'clamp(2rem, 8vw, 4rem)', fontWeight: 700, paddingLeft: '20px' }} className="hero-chinese">Chinese</span>
+            </div>
           </h1>
           <p style={{ fontSize: 'clamp(1rem, 4vw, 1.25rem)', color: '#4b5563', marginBottom: '1.5rem' }}>
             Chinese comfort food – <span style={{ color: '#F44336', fontWeight: 600 }}>big portions</span>, bold flavours, delivered hot.
@@ -101,33 +123,12 @@ const Hero = () => {
         </div>
       </motion.div>
       <style jsx>{`
-        .hero-title {
-          font-size: clamp(2rem, 8vw, 3.5rem);
-        }
         @media (max-width: 768px) {
-          .hero-beebies {
-            font-size: 3.5rem !important;
-            display: block;
-            margin-bottom: 0.5rem;
-            position: relative;
-            width: fit-content;
-          }
-          .hero-beebies::after {
-            content: '';
-            position: absolute;
-            bottom: 8px;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: #F44336;
-            transform: rotate(-1deg);
-            border-radius: 4px;
-          }
-          .hero-suffix {
-            font-size: 1.5rem !important;
-          }
           .hero-title {
-            font-size: 1rem !important;
+            padding-left: 45px !important;
+          }
+          .hero-beebies {
+            top: 5px !important;
           }
         }
         @media (min-width: 968px) {

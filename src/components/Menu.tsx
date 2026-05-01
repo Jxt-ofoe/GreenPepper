@@ -68,7 +68,18 @@ const Menu = () => {
                       border: '1px solid #f1f5f9'
                     }}
                   >
-                    <span style={{ fontWeight: 500, fontSize: '0.9rem' }}>{item.name}</span>
+                    <span style={{ fontWeight: 500, fontSize: '0.9rem' }}>
+                      {item.name.split("Beebie's").map((part, i, arr) => (
+                        <span key={i}>
+                          {part}
+                          {i < arr.length - 1 && (
+                            <span style={{ fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block', fontWeight: 700 }}>
+                              <span style={{ color: '#F44336', fontFamily: '"Caveat", cursive', fontSize: '1.2em' }}>Beebie's</span>
+                            </span>
+                          )}
+                        </span>
+                      ))}
+                    </span>
                     <span style={{ fontWeight: 700, color: '#2E7D32', fontSize: '0.95rem', fontFamily: "'Poppins', sans-serif" }}>{item.price}</span>
                   </div>
                 ))}

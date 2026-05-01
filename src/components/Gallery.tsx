@@ -99,7 +99,18 @@ const GalleryItem = ({ item, index }: { item: any, index: number }) => {
       onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
       onMouseLeave={(e) => (e.currentTarget.style.opacity = '0')}
       >
-        <span style={{ color: 'white', fontWeight: 600, fontSize: '1.1rem' }}>{item.label}</span>
+        <span style={{ color: 'white', fontWeight: 600, fontSize: '1.1rem' }}>
+          {item.label.split("Beebie's").map((part: string, i: number, arr: string[]) => (
+            <span key={i}>
+              {part}
+              {i < arr.length - 1 && (
+                <span style={{ fontStyle: 'italic', transform: 'skewX(-15deg)', display: 'inline-block', fontWeight: 700 }}>
+                  <span style={{ color: '#F44336', fontFamily: '"Caveat", cursive', fontSize: '1.2em' }}>Beebie's</span>
+                </span>
+              )}
+            </span>
+          ))}
+        </span>
       </div>
     </motion.div>
   );
