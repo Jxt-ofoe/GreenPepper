@@ -67,7 +67,12 @@ const Header = () => {
   };
 
   return (
-    <header className={`sticky top-0 z-[1000] bg-white transition-shadow ${isScrolled ? 'shadow-md' : ''}`} style={{ borderBottom: '1px solid #e5e7eb' }}>
+    <header className={`sticky top-0 z-[1000] transition-all duration-300 ${isScrolled ? 'shadow-md' : ''}`} style={{ 
+      background: 'rgba(255, 255, 255, 0.8)', 
+      backdropFilter: 'blur(10px)',
+      WebkitBackdropFilter: 'blur(10px)',
+      borderBottom: '1px solid rgba(229, 231, 235, 0.5)' 
+    }}>
       <div style={{ 
         display: 'flex', 
         justifyContent: 'space-between', 
