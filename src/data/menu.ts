@@ -107,9 +107,9 @@ export const menuData = [
     icon: "LayoutList",
     image: "/images/banku.png",
     items: [
-      { name: "N1. Banku & Tilapia (Small)", price: "GH₵130" },
-      { name: "N1. Banku & Tilapia (Medium)", price: "GH₵160" },
-      { name: "N1. Banku & Tilapia (Large)", price: "GH₵180" },
+      { name: "N1. Banku & Tilapia (Medium)", price: "GH₵130" },
+      { name: "N1. Banku & Tilapia (Large)", price: "GH₵160" },
+      { name: "N1. Banku & Tilapia (Extra Large)", price: "GH₵180" },
       { name: "Extra 5. Goat Meat Only", price: "GH₵60" },
     ],
   },
