@@ -105,7 +105,7 @@ const Hero = () => {
             </a>
           </div>
           <p style={{ color: '#4b5563', maxWidth: '600px', fontSize: '1rem', margin: '0 auto' }}>
-            Autentic chinese cooking in accra. big portions, bold flavors and delivered hot. taste the pepper, feel the warmth.
+            Autentic chinese cooking in Accra. big portions, bold flavors and delivered hot. taste the pepper, feel the warmth.
           </p>
         </div>
         <div style={{
