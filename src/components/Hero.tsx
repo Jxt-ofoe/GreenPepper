@@ -105,7 +105,7 @@ const Hero = () => {
             </a>
           </div>
           <p style={{ color: '#4b5563', maxWidth: '600px', fontSize: '1rem', margin: '0 auto' }}>
-            Authentic Chinese-style comfort food in Accra. Big portions, bold flavours, and delivered hot. Taste the pepper, feel the warmth.
+            autentic chinese style in accra. big portions, bold flavors, and delivered hot. taste the pepper, feel the warmth.
           </p>
         </div>
         <div style={{ 
@@ -116,9 +116,9 @@ const Hero = () => {
           boxShadow: '0 20px 40px rgba(0,0,0,0.1)' 
         }}>
           <img 
-            src="/images/hero.png" 
-            alt="Beebie's signature dish" 
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            src="/images/hero_pepper.png" 
+            alt="Beebie's realistic green pepper logo" 
+            style={{ width: '100%', height: '100%', objectFit: 'contain', background: 'white' }} 
           />
         </div>
       </motion.div>

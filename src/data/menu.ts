@@ -20,7 +20,7 @@ export const menuData = [
   {
     category: "Soup",
     icon: "Soup",
-    image: "/images/noodle_soup.png",
+    image: "/images/pure_soup.png",
     items: [
       { name: "B1. Hot & Sour Soup", price: "GH₵60" },
       { name: "B2. Chicken & Sweet Corn Soup", price: "GH₵60" },
