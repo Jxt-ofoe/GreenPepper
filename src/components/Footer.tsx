@@ -52,7 +52,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <p style={{ lineHeight: 1.8 }}>Authentic Chinese cooking food in the heart of Accra. Big portions, bold flavours, delivered hot to your doorstep.</p>
+          <p style={{ lineHeight: 1.8 }}>Authentic Chinese cooking in the heart of Accra. Big portions, bold flavours, delivered hot to your doorstep.</p>
         </div>
 
         <div>
