@@ -43,9 +43,7 @@ export const menuData = [
       { name: "C8. Squid in any of the above Sauce", price: "GH₵150" },
       { name: "C9. Prawns in any of the above Sauce", price: "GH₵260" },
       { name: "C10. Oyster Sauce", price: "GH₵90" },
-      { name: "C11. Squid Sauce", price: "GH₵150" },
-      { name: "C12. Assorted Sea Food Sauce", price: "GH₵260" },
-      { name: "C13. Prawns Sauce", price: "GH₵230" },
+      { name: "C11. Assorted Sea Food Sauce", price: "GH₵260" },
     ],
   },
   {
@@ -208,9 +206,9 @@ export const menuData = [
       { name: "M5. Soup Noodles with Assorted Meat", price: "GH₵100" },
       { name: "M6. Soup Noodles with Shrimp", price: "GH₵150" },
       { name: "M7. Soup Noodles with Assorted Sea Foods", price: "GH₵260" },
-      { name: "M8. Special Noodles with Shrimp", price: "GH₵150" },
-      { name: "M9. Assorted Sea Food Noodles", price: "GH₵140" },
-      { name: "M10. Fried Noodles With Squid", price: "GH₵140" },
+      { name: "M8. Green Pepper Special Soup Noodles with Shrimp(Beef & Chicken)", price: "GH₵150" },
+      { name: "M9. Green Pepper Assorted Sea Food Noodles", price: "GH₵260" },
+      { name: "M10. Green Pepper Special Soup Noodles With Squid(Beef & Chicken)", price: "GH₵140" },
     ],
   },
   {
