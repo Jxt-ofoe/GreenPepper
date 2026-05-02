@@ -10,7 +10,7 @@ const Header = () => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [status, setStatus] = useState({ isOpen: false, message: 'Closed · Opens 10:30am' });
+  const [status, setStatus] = useState({ isOpen: false, message: 'Closed · Opens 10am' });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,20 +24,20 @@ const Header = () => {
       const minutes = now.getMinutes();
       const currentTime = hours + minutes / 60;
 
-      let openTime = 10.5; // 10:30am
+      let openTime = 10; // 10am
       let closeTime = 22.5; // 10:30pm
-      let nextOpen = '10:30am';
+      let nextOpen = '10am';
 
       if (day === 0) { // Sunday
-        openTime = 13; // 1pm
-        closeTime = 22; // 10pm
-        nextOpen = '1pm';
+        openTime = 10; // 10am
+        closeTime = 22.5; // 10:30pm
+        nextOpen = '10am';
       }
 
       const isOpen = currentTime >= openTime && currentTime < closeTime;
       
       if (isOpen) {
-        setStatus({ isOpen: true, message: 'Open Now · Closes ' + (day === 0 ? '10pm' : '10:30pm') });
+        setStatus({ isOpen: true, message: 'Open Now · Closes 10:30pm' });
       } else {
         setStatus({ isOpen: false, message: 'Closed · Opens ' + nextOpen });
       }

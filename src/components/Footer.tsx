@@ -60,7 +60,7 @@ const Footer = () => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><MapPin size={18} color="#66BB6A" /> Anum Yemoh Loop, Accra, Ghana</p>
             <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><Phone size={18} color="#66BB6A" /> +233 20 812 9361</p>
-            <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><Clock size={18} color="#66BB6A" /> Mon–Sat 10:30am–10:30pm, Sun 1pm–10pm</p>
+            <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><Clock size={18} color="#66BB6A" /> Mon–Sun 10:00am–10:30pm</p>
           </div>
         </div>
 

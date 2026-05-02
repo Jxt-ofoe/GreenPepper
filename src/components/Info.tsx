@@ -8,7 +8,7 @@ const Info = () => {
   return (
     <section id="info" style={{ padding: '2rem 5%', maxWidth: '1400px', margin: '0 auto' }}>
       <div className="info-grid" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2rem' }}>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -35,8 +35,8 @@ const Info = () => {
             </h3>
             <p style={{ color: '#4b5563', marginBottom: '1.5rem', fontSize: '0.95rem' }}>Order via WhatsApp or call us directly for pickup orders.</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-              <a 
-                href="https://wa.me/233208129361?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order." 
+              <a
+                href="https://wa.me/233208129361?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ background: '#2E7D32', color: 'white', padding: '10px 20px', borderRadius: '10px', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}
@@ -53,7 +53,7 @@ const Info = () => {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -65,11 +65,11 @@ const Info = () => {
             </h3>
             <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #f1f5f9', fontWeight: 500, fontSize: '0.95rem' }}>
               <span>Mon – Sat</span>
-              <span>10:30am – 10:30pm</span>
+              <span>10am – 10:30pm</span>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #f1f5f9', fontWeight: 500, fontSize: '0.95rem' }}>
               <span>Sunday</span>
-              <span>1pm – 10pm</span>
+              <span>1pm – 10:30pm</span>
             </div>
           </div>
 
@@ -81,9 +81,9 @@ const Info = () => {
               <p style={{ fontSize: '1rem', fontWeight: 600 }}>"We deliver to your doorstep Monday–Saturday"</p>
             </div>
           </div>
-          
+
           <div style={{ marginTop: '1.5rem', borderRadius: '16px', overflow: 'hidden', height: '180px' }}>
-             <img src="/images/takeaway.png" alt="Delivery packaging" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/images/takeaway.png" alt="Delivery packaging" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
         </motion.div>
       </div>
