@@ -58,8 +58,8 @@ const Footer = () => {
         <div>
           <h4 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Contact Info</h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><MapPin size={18} color="#66BB6A" /> Anum Yemoh Loop, Accra, Ghana</p>
-            <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><Phone size={18} color="#66BB6A" /> +233 20 812 9361</p>
+            <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><MapPin size={18} color="#66BB6A" /> Anum Yemoh Loop & Tesano/Abeka Junction</p>
+            <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><Phone size={18} color="#66BB6A" /> +233 30 224 3636</p>
             <p style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><Clock size={18} color="#66BB6A" /> Mon–Sun 10:00am–10:30pm</p>
           </div>
         </div>

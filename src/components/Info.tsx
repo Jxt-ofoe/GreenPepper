@@ -18,7 +18,8 @@ const Info = () => {
             <h3 style={{ fontSize: '1.25rem', color: '#2E7D32', marginBottom: '0.8rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
               <MapPin size={20} /> Location
             </h3>
-            <p style={{ fontSize: '1rem' }}>Anum Yemoh Loop, Accra, Ghana</p>
+            <p style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>• Anum Yemoh Loop, Accra</p>
+            <p style={{ fontSize: '1rem' }}>• Tesano / Abeka Junction</p>
             <a href="#" style={{ color: '#2E7D32', fontWeight: 600, fontSize: '0.85rem', marginTop: '6px', display: 'inline-block' }}>View on Google Maps</a>
           </div>
 
@@ -26,7 +27,7 @@ const Info = () => {
             <h3 style={{ fontSize: '1.25rem', color: '#2E7D32', marginBottom: '0.8rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
               <Phone size={20} /> Contact
             </h3>
-            <a href="tel:+233208129361" style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 20 812 9361</a>
+            <a href="tel:+233302243636" style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 30 224 3636</a>
           </div>
 
           <div style={{ marginBottom: '1.5rem' }}>
@@ -36,14 +37,14 @@ const Info = () => {
             <p style={{ color: '#4b5563', marginBottom: '1.5rem', fontSize: '0.95rem' }}>Order via WhatsApp or call us directly for pickup orders.</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
               <a
-                href="https://wa.me/233208129361?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order."
+                href="https://wa.me/233302243636?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ background: '#2E7D32', color: 'white', padding: '10px 20px', borderRadius: '10px', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}
               >
                 Order on WhatsApp
               </a>
-              <a href="tel:+233208129361" style={{ border: '2px solid #2E7D32', color: '#2E7D32', padding: '10px 20px', borderRadius: '10px', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}>Call Pickup</a>
+              <a href="tel:+233302243636" style={{ border: '2px solid #2E7D32', color: '#2E7D32', padding: '10px 20px', borderRadius: '10px', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}>Call Pickup</a>
             </div>
           </div>
 
