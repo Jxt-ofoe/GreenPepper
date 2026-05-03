@@ -47,7 +47,7 @@ const Info = () => {
                   <Phone size={16} color="#2E7D32" /> +233 30 224 3636
                 </a>
                 <a 
-                  href="https://wa.me/233302243636?text=Hello%20Beebie's%20Green%20Pepper%20Chinese%20(Tesano),%20I'd%20like%20to%20place%20an%20order."
+                  href="https://wa.me/233595244316?text=Hello%20Beebie's%20Green%20Pepper%20Chinese%20(Tesano),%20I'd%20like%20to%20place%20an%20order."
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ background: '#25D366', color: 'white', padding: '8px 16px', borderRadius: '10px', fontSize: '0.85rem', fontWeight: 600, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}
@@ -63,8 +63,9 @@ const Info = () => {
               <Phone size={20} /> General Inquiries
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <a href="tel:+233208129361" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 20 812 9361</a>
-              <a href="tel:+233302243636" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 30 224 3636</a>
+              <a href="tel:+233208129361" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 20 812 9361 (Main)</a>
+              <a href="tel:+233302243636" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 30 224 3636 (Landline)</a>
+              <a href="tel:+233595244316" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 59 524 4316 (WhatsApp)</a>
             </div>
           </div>
 

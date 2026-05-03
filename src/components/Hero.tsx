@@ -105,7 +105,7 @@ const Hero = () => {
               <ShoppingBag size={18} /> Order (East Legon)
             </a>
             <a
-              href="https://wa.me/233302243636?text=Hello%20Beebie's%20Green%20Pepper%20Chinese%20(Tesano),%20I'd%20like%20to%20place%20an%20order."
+              href="https://wa.me/233595244316?text=Hello%20Beebie's%20Green%20Pepper%20Chinese%20(Tesano),%20I'd%20like%20to%20place%20an%20order."
               target="_blank"
               rel="noopener noreferrer"
               style={{
