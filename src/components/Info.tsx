@@ -15,19 +15,57 @@ const Info = () => {
           style={{ background: 'white', padding: '2rem', borderRadius: '24px', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}
         >
           <div style={{ marginBottom: '2rem' }}>
-            <h3 style={{ fontSize: '1.25rem', color: '#2E7D32', marginBottom: '0.8rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <MapPin size={20} /> Location
+            <h3 style={{ fontSize: '1.25rem', color: '#2E7D32', marginBottom: '1.2rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <MapPin size={20} /> Our Locations
             </h3>
-            <p style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>• Anum Yemoh Loop, Accra</p>
-            <p style={{ fontSize: '1rem' }}>• Tesano / Abeka Junction</p>
-            <a href="#" style={{ color: '#2E7D32', fontWeight: 600, fontSize: '0.85rem', marginTop: '6px', display: 'inline-block' }}>View on Google Maps</a>
+            
+            {/* Branch 1 */}
+            <div style={{ marginBottom: '1.5rem', padding: '1.2rem', background: '#f9fafb', borderRadius: '16px', border: '1px solid #f1f5f9' }}>
+              <p style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.4rem', color: '#1F2937' }}>Anum Yemoh Loop (East Legon)</p>
+              <p style={{ fontSize: '0.95rem', color: '#6b7280', marginBottom: '1rem' }}>Main Branch - Accra, Ghana</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', alignItems: 'center' }}>
+                <a href="tel:+233208129361" style={{ fontSize: '1rem', fontWeight: 600, color: '#1F2937', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <Phone size={16} color="#2E7D32" /> +233 20 812 9361
+                </a>
+                <a 
+                  href="https://wa.me/233208129361?text=Hello%20Beebie's%20Green%20Pepper%20Chinese%20(East%20Legon),%20I'd%20like%20to%20place%20an%20order."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ background: '#25D366', color: 'white', padding: '8px 16px', borderRadius: '10px', fontSize: '0.85rem', fontWeight: 600, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}
+                >
+                  Order on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* Branch 2 */}
+            <div style={{ padding: '1.2rem', background: '#f9fafb', borderRadius: '16px', border: '1px solid #f1f5f9' }}>
+              <p style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.4rem', color: '#1F2937' }}>Tesano / Abeka Junction</p>
+              <p style={{ fontSize: '0.95rem', color: '#6b7280', marginBottom: '1rem' }}>New Branch - Accra, Ghana</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', alignItems: 'center' }}>
+                <a href="tel:+233302243636" style={{ fontSize: '1rem', fontWeight: 600, color: '#1F2937', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <Phone size={16} color="#2E7D32" /> +233 30 224 3636
+                </a>
+                <a 
+                  href="https://wa.me/233302243636?text=Hello%20Beebie's%20Green%20Pepper%20Chinese%20(Tesano),%20I'd%20like%20to%20place%20an%20order."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ background: '#25D366', color: 'white', padding: '8px 16px', borderRadius: '10px', fontSize: '0.85rem', fontWeight: 600, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}
+                >
+                  Order on WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
 
           <div style={{ marginBottom: '2rem' }}>
             <h3 style={{ fontSize: '1.25rem', color: '#2E7D32', marginBottom: '0.8rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <Phone size={20} /> Contact
+              <Phone size={20} /> General Inquiries
             </h3>
-            <a href="tel:+233302243636" style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 30 224 3636</a>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <a href="tel:+233208129361" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 20 812 9361</a>
+              <a href="tel:+233302243636" style={{ fontSize: '1.2rem', fontWeight: 700, color: '#1F2937', textDecoration: 'none' }}>+233 30 224 3636</a>
+            </div>
           </div>
 
           <div style={{ marginBottom: '1.5rem' }}>
@@ -36,14 +74,6 @@ const Info = () => {
             </h3>
             <p style={{ color: '#4b5563', marginBottom: '1.5rem', fontSize: '0.95rem' }}>Order via WhatsApp or call us directly for pickup orders.</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-              <a
-                href="https://wa.me/233302243636?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order."
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ background: '#2E7D32', color: 'white', padding: '10px 20px', borderRadius: '10px', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}
-              >
-                Order on WhatsApp
-              </a>
               <a href="tel:+233302243636" style={{ border: '2px solid #2E7D32', color: '#2E7D32', padding: '10px 20px', borderRadius: '10px', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}>Call Pickup</a>
             </div>
           </div>

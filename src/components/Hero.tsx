@@ -82,13 +82,13 @@ const Hero = () => {
             alignItems: 'center'
           }} className="hero-btns">
             <a
-              href="https://wa.me/233302243636?text=Hello%20Beebie's%20Green%20Pepper%20Chinese,%20I'd%20like%20to%20place%20an%20order."
+              href="https://wa.me/233208129361?text=Hello%20Beebie's%20Green%20Pepper%20Chinese%20(East%20Legon),%20I'd%20like%20to%20place%20an%20order."
               target="_blank"
               rel="noopener noreferrer"
               style={{
                 background: '#2E7D32',
                 color: 'white',
-                padding: '14px 32px',
+                padding: '14px 24px',
                 borderRadius: '12px',
                 fontWeight: 600,
                 display: 'flex',
@@ -98,10 +98,34 @@ const Hero = () => {
                 textDecoration: 'none',
                 width: '100%',
                 maxWidth: '300px',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                fontSize: '0.9rem'
               }}
             >
-              <ShoppingBag size={20} /> Order on WhatsApp
+              <ShoppingBag size={18} /> Order (East Legon)
+            </a>
+            <a
+              href="https://wa.me/233302243636?text=Hello%20Beebie's%20Green%20Pepper%20Chinese%20(Tesano),%20I'd%20like%20to%20place%20an%20order."
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: '#2E7D32',
+                color: 'white',
+                padding: '14px 24px',
+                borderRadius: '12px',
+                fontWeight: 600,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                transition: 'all 0.3s ease',
+                textDecoration: 'none',
+                width: '100%',
+                maxWidth: '300px',
+                justifyContent: 'center',
+                fontSize: '0.9rem'
+              }}
+            >
+              <ShoppingBag size={18} /> Order (Tesano)
             </a>
           </div>
           <p style={{ color: '#4b5563', maxWidth: '600px', fontSize: '1rem', margin: '0 auto' }}>
